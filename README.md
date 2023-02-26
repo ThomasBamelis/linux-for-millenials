@@ -87,3 +87,8 @@ git grep -i help_me_with_this
 ```
 The kernel Documentation has docs for kernel developers, not (just) users!
 A great trick when trying to figure something out is read the docs of the parent subsystem or the tools it uses (e.g. vfs for overlayfs).
+
+### I want to write something for which I don't have hardware
+
+For some things Linux provides fake/dummy devices, such as this fake i2c bus I just found.
+https://docs.kernel.org/i2c/i2c-stub.html
