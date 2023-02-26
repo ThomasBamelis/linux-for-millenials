@@ -92,3 +92,13 @@ A great trick when trying to figure something out is read the docs of the parent
 
 For some things Linux provides fake/dummy devices, such as this fake i2c bus I just found.
 https://docs.kernel.org/i2c/i2c-stub.html
+
+
+### Where can I find the Linux git repo's ###
+Don't use the one you find on Github when you google it.
+Use the on over at git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+
+That one is the canonical Linux repo. Everything that appears there is the official state of Linux.
+But it is not the "this is coming up in Linux" repo, this one only has the patches that have been approved and grouped for every release or request for comments (rc).
+The "bleeding edge" / staging one is over at git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git
+You should create your patches against the master branch over there.
