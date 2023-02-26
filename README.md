@@ -102,3 +102,9 @@ That one is the canonical Linux repo. Everything that appears there is the offic
 But it is not the "this is coming up in Linux" repo, this one only has the patches that have been approved and grouped for every release or request for comments (rc).
 The "bleeding edge" / staging one is over at git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git
 You should create your patches against the master branch over there.
+This repo contains tags for every day, so `next-YYYYMMDD`.
+
+=== I want pretty Documentation ===
+The (recent) kernel allows creating html from the documentation by using `make htmldocs`.
+You will then find the webpage under `Documentation/output/html`.
+You can find how to generate and write documentation here: https://www.kernel.org/doc/html/v4.10/doc-guide/sphinx.html
