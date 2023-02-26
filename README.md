@@ -106,5 +106,5 @@ This repo contains tags for every day, so `next-YYYYMMDD`.
 
 === I want pretty Documentation ===
 The (recent) kernel allows creating html from the documentation by using `make htmldocs`.
-You will then find the webpage under `Documentation/output/html`.
+You will then find the webpage under `Documentation/output/`, where you follow the same documentation path and you will find html files instead of rst files now that you can open in your browser.
 You can find how to generate and write documentation here: https://www.kernel.org/doc/html/v4.10/doc-guide/sphinx.html
