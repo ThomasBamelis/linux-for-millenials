@@ -7,7 +7,7 @@ but this is were I write down the workflow you can't just easily google online a
 for kernel developers.
 If anything, correct me if I'm wrong or you have a better way, so I learn as well! :D
 
-### Taking commits from another Linux tree and putting them in your own kernel tree
+## Taking commits from another Linux tree and putting them in your own kernel tree
 No, you don't have to type them over :)
 Say you found a commit in with branch or tag `fancy-new-feature` in `git://git.kernel.org/pub/scm/linux/kernel/git/broonie/regmap`.
 You can tell your local Linux git repo about the existance of that repo like this:
@@ -44,7 +44,7 @@ or if the conflicts scare you and you want to abort the cherry picking
 git cherry-pick --abort
 ```
 
-### Finding patch series
+## Finding patch series
 Linux never imports a single commit at a time, instead, people send the maintainers their patches.
 Those maintainers add those patches to some seperate branch they have in their own repo.
 When the time comes for a new linux release, you will see merge commits by Linus Torvalds for Linux subsystems (e.g. overlayfs / ovl).
@@ -76,7 +76,7 @@ So to view them for example you can do `git log yyyyyyy`!
 
 Since you have all these new commits one after another, you can cherry pick all of them with `git cherry-pick xxxxxx..yyyyyy` now!
 
-### finding documentation
+## finding documentation
 The bootlin website has a great click and link system for finding definitions of kernel functions/macro's/...
 But that is not where the info is a lot of the time.
 
@@ -88,13 +88,13 @@ git grep -i help_me_with_this
 The kernel Documentation has docs for kernel developers, not (just) users!
 A great trick when trying to figure something out is read the docs of the parent subsystem or the tools it uses (e.g. vfs for overlayfs).
 
-### I want to write something for which I don't have hardware
+## I want to write something for which I don't have hardware
 
 For some things Linux provides fake/dummy devices, such as this fake i2c bus I just found.
 https://docs.kernel.org/i2c/i2c-stub.html
 
 
-### Where can I find the Linux git repo's ###
+## Where can I find the Linux git repo's
 Don't use the one you find on Github when you google it.
 Use the on over at git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 
@@ -109,7 +109,7 @@ The (recent) kernel allows creating html from the documentation by using `make h
 You will then find the webpage under `Documentation/output/`, where you follow the same documentation path and you will find html files instead of rst files now that you can open in your browser.
 You can find how to generate and write documentation here: https://www.kernel.org/doc/html/v4.10/doc-guide/sphinx.html
 
-=== Editor support ===
+## Editor support
 You can make a compile_commands.json with
 ```
 make compile_commands.json
