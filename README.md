@@ -108,3 +108,16 @@ This repo contains tags for every day, so `next-YYYYMMDD`.
 The (recent) kernel allows creating html from the documentation by using `make htmldocs`.
 You will then find the webpage under `Documentation/output/`, where you follow the same documentation path and you will find html files instead of rst files now that you can open in your browser.
 You can find how to generate and write documentation here: https://www.kernel.org/doc/html/v4.10/doc-guide/sphinx.html
+
+=== Editor support ===
+You can make a compile_commands.json with
+```
+make compile_commands.json
+```
+This will make clangd pick it up, which will make it work with clangd lsp such as you can find for nvim or vscode.
+
+If you want rust completion too you can do
+```
+make rust-analyzer
+```
+This will provide the files needed for rust-analyzer to work (which you can make work with nvim-lsp or vscode)
